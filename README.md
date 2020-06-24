@@ -13,7 +13,7 @@ addpath('<download-path>/BCV');
 
 ## Usage
 
-Create a folder in _BCV/expectation_value/_ and create a .m file that calculates the expectation value for the annihilation/creation operators ![equation](https://latex.codecogs.com/gif.latex?%28%5Chat%7Ba%7D_j/%5Chat%7Ba%7D%5E%5Cdagger_j%29) for every mode ![equation](https://latex.codecogs.com/gif.latex?j=1,2) of your bipartite system and quadratic combinations of them:
+Create a folder in _BCV/expectation_value/_ and inside it create a .m file that calculates the expectation value for the annihilation/creation operators ![equation](https://latex.codecogs.com/gif.latex?%28%5Chat%7Ba%7D_j/%5Chat%7Ba%7D%5E%5Cdagger_j%29) for every mode ![equation](https://latex.codecogs.com/gif.latex?j=1,2) of your bipartite system and quadratic combinations of them:
 ![equation](https://latex.codecogs.com/gif.latex?%5Chat%7Ba%7D_j%5Chat%7Ba%7D_j%2C%20%5Chat%7Ba%7D%5E%5Cdagger_j%5Chat%7Ba%7D_j%2C%20%5Chat%7Ba%7D_1%5Chat%7Ba%7D_2%2C%20%5Chat%7Ba%7D_1%5Chat%7Ba%7D_2%5E%5Cdagger%5C%3B%20%2Cj%3D1%2C2.) The toobox can handle up to three modes in a system and change the bipartition under study.
 
 
@@ -24,7 +24,7 @@ change_system_to('<system_folder_name>')
 ```
 (Optional) Name the modes (default names are 'a_1', 'a_2' and 'a_3'):
 ```
-change_subsystem_label('<all_modes_names>')
+change_subsystem_label(['<all_modes_names>'])
 ```
 
 Specify the desired mode and/or bipartition (default names are 'a_1a_1', 'a_1a_2' and 'a_2a_3'):
@@ -42,12 +42,12 @@ new_subsystems_entanglement
 ```
 
 ## Author
-[Igor Brand„o](mailto:igorbrandao@aluno.puc-rio.br) - Master's student in [Thiago Guerreiro](mailto:barbosa@puc-rio.br)'s Lab at PontifÌcia Universidade CatÛlica do Rio de Janeiro
+[Igor Brand√£o](mailto:igorbrandao@aluno.puc-rio.br) - Master's student in [Thiago Guerreiro](mailto:barbosa@puc-rio.br)'s Lab at Pontif√≠cia Universidade Cat√≥lica do Rio de Janeiro
 
 ## Mathematical Formalism
 This code was based on and uses the same formalism as:
 
-> Christian Weedbrook, Stefano Pirandola, Ra˙l GarcÌa-PatrÛn, Nicolas J. Cerf, Timothy C. Ralph, Jeffrey H. , "Gaussian quantum information", [Rev. Mod. Phys. 84, 621](https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.84.621)
+> Christian Weedbrook, Stefano Pirandola, Ra√∫l Garc√≠a-Patr√≥n, Nicolas J. Cerf, Timothy C. Ralph, Jeffrey H. , "Gaussian quantum information", [Rev. Mod. Phys. 84, 621](https://journals.aps.org/rmp/abstract/10.1103/RevModPhys.84.621)
 
 ## License
 This code is made available under the Creative Commons Attribution-NonCommercial 4.0 License. For full details see LICENSE.md.
