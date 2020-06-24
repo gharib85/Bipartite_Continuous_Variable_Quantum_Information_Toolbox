@@ -52,6 +52,7 @@ This code was based on and uses the same formalism as:
 ## License
 This code is made available under the Creative Commons Attribution-NonCommercial 4.0 License. For full details see LICENSE.md.
 
+Cite this toolbox as: Igor Brandão, "Bipartite Continuous Variable Toolbox" [https://github.com/IgorBrandao42/Bipartite_Continuous_Variable](https://github.com/IgorBrandao42/Bipartite_Continuous_Variable). Retrived <date you downloaded>
 
 ## File Listing
 ```C
