@@ -34,16 +34,16 @@ end
 
 Log_Negativity = logarithmic_negativity2(t); % Evaluate the logarithmic negativity at each time 
 
-Entropy = Von_Neuman_Entropy2(t);        % Evaluate the von Neuman entropy at each time 
+Entropy = von_Neumann_Entropy2(t);        % Evaluate the von Neuman entropy at each time 
 
 razao = imag(Entropy)./real(Entropy);
 max_entropy = max(abs(Entropy(2:end)));  % valor maximo que a entropia alcancou
 idx = razao > 1e-2;                      % indice booleano dos casos que deu ruim
 if ~isempty(Entropy(idx))
   if abs(Entropy(idx)) < 1e-2*max_entropy  % se nos casos que deu ruim a entropia for quase nula,
-    dummy_variable = 2;                      % não tem problema, é só lixo de erro numérico
+    dummy_variable = 2;                      % nÃ£o tem problema, Ã© sÃ³ lixo de erro numÃ©rico
   else
-    disp("Entropia complexa! Parte imaginária não desprezável !!!")                         % mas se o valor da entropia é considerável, temos problemas !
+    disp("Entropia complexa! Parte imaginÃ¡ria nÃ£o desprezÃ¡vel !!!")                         % mas se o valor da entropia Ã© considerÃ¡vel, temos problemas !
   end
 end
 
